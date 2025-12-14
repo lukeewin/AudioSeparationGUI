@@ -42,8 +42,7 @@ punc_model_revision = "v2.0.4"
 spk_model_path = os.path.join(home_directory, ".cache", "modelscope", "hub", "models", "iic", "speech_campplus_sv_zh-cn_16k-common")
 spk_model_revision = "v2.0.4"
 hotword_file = "./hotwords.txt"
-ngpu = 1
-device = "cuda" if torch.cuda.is_available() else "cpu"
+ngpu = 1 if torch.cuda.is_available() else 0
 ncpu = psutil.cpu_count()
 
 # ASR 模型
@@ -57,7 +56,6 @@ model = AutoModel(model=asr_model_path,
                   spk_model_revision = spk_model_revision,
                   ngpu=ngpu,
                   ncpu=ncpu,
-                  device=device,
                   disable_pbar=True,
                   disable_log=True,
                   disable_update=True
