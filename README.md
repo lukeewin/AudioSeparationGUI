@@ -10,7 +10,8 @@
 要求 python version >= 3.8 \
 支持运行在 Windows、MacOS、Linux 系统 \
 本项目适合个人电脑使用，如果要在生产服务器中部署，并且需要并发处理，可到我博客中联系我 \
-热词功能，在当前路径下的 hotwords.txt 中写入热词，每个热词一行
+热词功能，在当前路径下的 hotwords.txt 中写入热词，每个热词一行 \
+区分说话人语音识别接口可[点击这里](https://github.com/lukeewin/FunASR_API)
 # 2. 开发日志
 2023-11-14 对选择的多个音频分离不同的人声 \
 2024-01-04 保存每个说话人对应的内容 \
@@ -41,4 +42,11 @@ python download_model.py
 可以添加交流群 693367146，添加时记得备注来自哪个平台 \
 个人技术分享博客：https://blog.lukeewin.top \
 如果是小白，不懂代码，可以[点击这里](https://item.taobao.com/item.htm?ft=t&id=853452834970)
+# 7. 其它项目
+1. [区分说话人语音识别接口，可点击这里跳转](https://github.com/lukeewin/FunASR_API)
+2. 基于 Java 开发的桌面端实时字幕软件，[可点击这里跳转](https://github.com/lukeewin/desktop_subtitle)
+3. 基于 Celery + Redis 开发的分布式区分说话人语音识别项目，适用于中大型公司使用，可分布式部署在多台服务器中，可使用多张显卡。（非开源项目，有意愿的公司可联系微信 lukeewin01）
+4. 基于 Java 开发的实时一句话语音识别项目，在阿里云高性能计算型服务器中转写 10 秒音频耗时 100 毫秒，不需要显卡，使用 onnxruntime 推理模型，适合公司级项目使用。（非开源项目）
+5. 基于 Java 开发的长录音转写项目，在阿里云高性能计算型服务器中转写 1 分钟音频耗时 1.1 秒，不需要显卡，使用 onnxruntime 推理模型。（非开源项目）
+6. 区分说话人语音识别接口。（非开源项目）
 
